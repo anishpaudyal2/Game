@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b2udxst0j0klf"]
+
+[ext_resource type="Script" uid="uid://b1kpsoypnc5fx" path="res://code/bluebullet.gd" id="1_6qay8"]
+[ext_resource type="Texture2D" uid="uid://dc7gqyj8p1umt" path="res://tank/bulletGreen1_outline.png" id="2_21s1j"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sc62p"]
+radius = 7.0
+height = 18.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nsiip"]
+radius = 9.0
+
+[node name="Bluebullet" type="CharacterBody2D" unique_id=1748436714]
+script = ExtResource("1_6qay8")
+
+[node name="BulletBlue1Outline" type="Sprite2D" parent="." unique_id=1790440664]
+rotation = 1.5707964
+texture = ExtResource("2_21s1j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=907530406]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_sc62p")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2027975352]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1618029000]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_nsiip")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

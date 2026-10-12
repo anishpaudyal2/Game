@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://e78cqk6mahkv"]
+
+[ext_resource type="Script" uid="uid://cd6tvfb2aylry" path="res://code/bluetank.gd" id="1_wtbrc"]
+[ext_resource type="PackedScene" uid="uid://bs5omaq7t6e0o" path="res://blackbullet.tscn" id="2_ekcrf"]
+[ext_resource type="Texture2D" uid="uid://dhq1gfugpt4v7" path="res://tank/tank_dark.png" id="3_cc5jr"]
+[ext_resource type="Script" uid="uid://cmvpveenu30v3" path="res://code/range_visual.gd" id="4_wtbrc"]
+[ext_resource type="AudioStream" uid="uid://bsamyninqqgfx" path="res://Tank Sound/Blue tank audio.mp3" id="5_8hnwa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xaec"]
+size = Vector2(51, 52)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sc62p"]
+radius = 319.53
+
+[node name="blacktank" type="StaticBody2D" unique_id=2087075873]
+collision_mask = 2
+script = ExtResource("1_wtbrc")
+damage = 45
+attack_speed = 0.8
+damage_increase = 17
+bullet_scene = ExtResource("2_ekcrf")
+tank_upgrade_image = ExtResource("3_cc5jr")
+base_tank_price = 350
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1388914567]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_5xaec")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1150335034]
+position = Vector2(72, 0)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=863405766]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=488668500]
+shape = SubResource("CircleShape2D_sc62p")
+
+[node name="Node" type="Node" parent="." unique_id=2063154826]
+
+[node name="TankBlue" type="Sprite2D" parent="." unique_id=878184443]
+rotation = -1.5707964
+scale = Vector2(1.2452376, 1.1586957)
+texture = ExtResource("3_cc5jr")
+
+[node name="RangeVisual" type="Polygon2D" parent="." unique_id=564176279]
+script = ExtResource("4_wtbrc")
+
+[node name="ShootSound" type="AudioStreamPlayer2D" parent="." unique_id=751894066]
+stream = ExtResource("5_8hnwa")
+volume_db = -15.0

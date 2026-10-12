@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsamyninqqgfx"
+path="res://.godot/imported/Blue tank audio.mp3-c5002e027a3e8e1ce515eb99db78a8aa.mp3str"
+
+[deps]
+
+source_file="res://Tank Sound/Blue tank audio.mp3"
+dest_files=["res://.godot/imported/Blue tank audio.mp3-c5002e027a3e8e1ce515eb99db78a8aa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

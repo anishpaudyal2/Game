@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dh5piv1c1b341"]
+
+[ext_resource type="Texture2D" uid="uid://cvjwnq2olvga5" path="res://Enemy/coconuttt.png" id="1_7k104"]
+
+[node name="Node2D" type="Node2D" unique_id=1969746661]
+
+[node name="Coconuttt" type="Sprite2D" parent="." unique_id=946590393]
+position = Vector2(1.09, -0.394)
+rotation = 1.8622663
+scale = Vector2(0.0641768, 0.06517517)
+texture = ExtResource("1_7k104")

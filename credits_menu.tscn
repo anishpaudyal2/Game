@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://sqeibhgle766"]
+
+[ext_resource type="Script" uid="uid://dyoycp0gasvsq" path="res://credits_menu.gd" id="1_kdv4w"]
+
+[node name="CreditsMenu" type="Node2D" unique_id=18528316]
+script = ExtResource("1_kdv4w")
+
+[node name="Panel" type="Panel" parent="." unique_id=2106084338]
+modulate = Color(0.27730417, 0.27730417, 0.27730417, 1)
+self_modulate = Color(5.7923665, 18.892157, 18.892157, 1)
+offset_right = 1150.0
+offset_bottom = 644.0
+
+[node name="Label" type="Label" parent="." unique_id=2060441748]
+offset_left = 21.0
+offset_top = 26.0
+offset_right = 1001.99994
+offset_bottom = 673.0
+text = "CREDITS
+
+GAME CREATED BY
+Anish
+
+MUSIC
+Atlas Audio
+Subclair
+
+SOUND EFFECTS
+u_f09vejvoga
+apebble
+
+ASSETS
+Kenney.nl
+
+GAME DEVELOPMENT IDEAS & SUPPORT
+Markus Grotsius
+Aden Mehrtens
+Mr Barber
+
+GAME ENGINE
+Godot Engine
+"
+
+[node name="Button" type="Button" parent="." unique_id=827035433]
+offset_left = 1019.0
+offset_top = 570.0
+offset_right = 1143.0
+offset_bottom = 634.0
+theme_override_colors/font_color = Color(0.006420651, 0.0022035588, 0.004621078, 1)
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

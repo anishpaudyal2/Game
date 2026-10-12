@@ -1,0 +1,904 @@
+[gd_scene format=4 uid="uid://c1txntikujaij"]
+
+[ext_resource type="Script" uid="uid://bs3e0iq7cr045" path="res://code/map.gd" id="1_rox04"]
+[ext_resource type="Texture2D" uid="uid://bw642qbg2jeax" path="res://Map/Enviromental stuff/ground.png" id="2_n5say"]
+[ext_resource type="Texture2D" uid="uid://2wokdllomk2d" path="res://Map/Enviromental stuff/towerDefense_tile136.png" id="3_u660q"]
+[ext_resource type="Texture2D" uid="uid://bll2ylp1r8xfy" path="res://Map/Enviromental stuff/towerDefense_tile135.png" id="4_ne152"]
+[ext_resource type="Texture2D" uid="uid://ba5hr7kyxnolh" path="res://Map/Enviromental stuff/towerDefense_tile134.png" id="5_brrwk"]
+[ext_resource type="Texture2D" uid="uid://u88wqwsnyim8" path="res://Map/Enviromental stuff/towerDefense_tile132.png" id="6_28i2f"]
+[ext_resource type="Texture2D" uid="uid://mpqk26dm7h6s" path="res://Map/Enviromental stuff/pond.png" id="7_6d1bb"]
+[ext_resource type="Texture2D" uid="uid://djdgqion16arr" path="res://Map/Enviromental stuff/flowers.png" id="8_pkupc"]
+[ext_resource type="Texture2D" uid="uid://csfhwk8d23jak" path="res://Map/Enviromental stuff/roadddd.png" id="9_vveqt"]
+[ext_resource type="Texture2D" uid="uid://cbu1uvxmf6yej" path="res://Map/Enviromental stuff/actual.png" id="10_oyveh"]
+[ext_resource type="Texture2D" uid="uid://b8tcer8ddk431" path="res://Map/Enviromental stuff/actual - Copy.png" id="11_d4oyn"]
+[ext_resource type="Texture2D" uid="uid://c7ke18bxlkoc1" path="res://Map/Enviromental stuff/actual - Copy - Copy.png" id="12_8fahx"]
+[ext_resource type="Texture2D" uid="uid://bbgpmyu2kmaal" path="res://Map/Enviromental stuff/actual - Copy - Copy - Copy (2).png" id="13_k5q7v"]
+[ext_resource type="Texture2D" uid="uid://d2erfulvgbasp" path="res://Map/Enviromental stuff/roadddd - Copy.png" id="14_wxdfw"]
+[ext_resource type="Texture2D" uid="uid://d0woc2affkmma" path="res://Map/terrainTiles_default.png" id="15_63kcp"]
+[ext_resource type="Texture2D" uid="uid://dfv64d0askan6" path="res://Map/Enviromental stuff/treeBrown_large.png" id="16_r5vnb"]
+[ext_resource type="Texture2D" uid="uid://c026nn6ls86dx" path="res://Map/Enviromental stuff/treeGreen_large.png" id="17_j65g8"]
+[ext_resource type="Texture2D" uid="uid://d27l3yecitlb" path="res://Map/Enviromental stuff/treeGreen_small.png" id="18_020ee"]
+[ext_resource type="Texture2D" uid="uid://byxoihggfgpyn" path="res://Map/Enviromental stuff/treeBrown_small.png" id="19_ckdtb"]
+[ext_resource type="Texture2D" uid="uid://b5aqi5djt46dk" path="res://Map/Enviromental stuff/towerDefense_tile137.png" id="20_wwl6j"]
+[ext_resource type="Texture2D" uid="uid://bes32oqclkr0y" path="res://Map/Enviromental stuff/bush'.png" id="21_hfs8b"]
+[ext_resource type="Texture2D" uid="uid://h264w5q02kh5" path="res://Map/Enviromental stuff/cactus].png" id="22_1gwpe"]
+[ext_resource type="Texture2D" uid="uid://eshqofycgw2y" path="res://Map/Enviromental stuff/ghas.png" id="23_vphb4"]
+[ext_resource type="Texture2D" uid="uid://chx10ftnepo1s" path="res://Map/Enviromental stuff/daisy1.png" id="24_k3uuf"]
+[ext_resource type="Texture2D" uid="uid://cdh7jltka26s1" path="res://Map/Enviromental stuff/treee.png" id="25_obikd"]
+[ext_resource type="Texture2D" uid="uid://orf3yvs7q0ea" path="res://Map/Enviromental stuff/arko ghas.png" id="26_2mh31"]
+[ext_resource type="Texture2D" uid="uid://5an3opr8kbtn" path="res://buttons/n1.png" id="27_w55ow"]
+[ext_resource type="Texture2D" uid="uid://hjawv1t1akog" path="res://buttons/n2.png" id="28_fml5w"]
+[ext_resource type="Texture2D" uid="uid://dkha4ak8apbpk" path="res://tank/tank_blue.png" id="29_r2bgk"]
+[ext_resource type="Texture2D" uid="uid://6qcxts0qyg0n" path="res://tank/tank_red.png" id="30_lidvp"]
+[ext_resource type="Texture2D" uid="uid://dhq1gfugpt4v7" path="res://tank/tank_dark.png" id="31_c5d6v"]
+[ext_resource type="Texture2D" uid="uid://cp2yfmtlpx8ao" path="res://tank/tank_green.png" id="32_df044"]
+[ext_resource type="Texture2D" uid="uid://5qghaglq2rme" path="res://tank/tank_bigRed.png" id="33_fhrnc"]
+[ext_resource type="Texture2D" uid="uid://pqyvj32ptck8" path="res://tank/tank_darkLarge.png" id="34_b0lxx"]
+[ext_resource type="Script" uid="uid://bb5svvp76eyow" path="res://code/TankUpgradeSystem.gd" id="35_hyvfv"]
+[ext_resource type="Texture2D" uid="uid://icoh6wgs3404" path="res://buttons/shafgsAHS.png" id="36_0pnta"]
+[ext_resource type="AudioStream" uid="uid://dbc7iymn8wlo8" path="res://Tank Sound/fart.mp3" id="37_rox04"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u660q"]
+texture = ExtResource("2_n5say")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_suv0k"]
+texture = ExtResource("3_u660q")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0odt2"]
+texture = ExtResource("4_ne152")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_275sb"]
+texture = ExtResource("5_brrwk")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hniq5"]
+texture = ExtResource("6_28i2f")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jrcb4"]
+texture = ExtResource("7_6d1bb")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b3mxb"]
+texture = ExtResource("8_pkupc")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iye0r"]
+texture = ExtResource("9_vveqt")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lf0el"]
+texture = ExtResource("10_oyveh")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ne152"]
+texture = ExtResource("11_d4oyn")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_brrwk"]
+texture = ExtResource("12_8fahx")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_28i2f"]
+texture = ExtResource("13_k5q7v")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6d1bb"]
+texture = ExtResource("14_wxdfw")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_phpw6"]
+texture = ExtResource("15_63kcp")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+8:1/0 = 0
+7:1/0 = 0
+6:1/0 = 0
+5:1/0 = 0
+4:1/0 = 0
+3:1/0 = 0
+2:1/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:1/0 = 0
+9:0/0 = 0
+9:2/0 = 0
+9:3/0 = 0
+8:3/0 = 0
+7:3/0 = 0
+6:3/0 = 0
+5:3/0 = 0
+4:3/0 = 0
+3:3/0 = 0
+2:3/0 = 0
+1:3/0 = 0
+0:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_63tq4"]
+texture = ExtResource("16_r5vnb")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p7d8v"]
+texture = ExtResource("17_j65g8")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t0imr"]
+texture = ExtResource("18_020ee")
+texture_region_size = Vector2i(36, 36)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tpiga"]
+texture = ExtResource("19_ckdtb")
+texture_region_size = Vector2i(36, 36)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oa7bu"]
+texture = ExtResource("20_wwl6j")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5xaec"]
+sources/3 = SubResource("TileSetAtlasSource_phpw6")
+sources/4 = SubResource("TileSetAtlasSource_63tq4")
+sources/6 = SubResource("TileSetAtlasSource_p7d8v")
+sources/7 = SubResource("TileSetAtlasSource_t0imr")
+sources/8 = SubResource("TileSetAtlasSource_tpiga")
+sources/9 = SubResource("TileSetAtlasSource_oa7bu")
+sources/10 = SubResource("TileSetAtlasSource_suv0k")
+sources/11 = SubResource("TileSetAtlasSource_0odt2")
+sources/12 = SubResource("TileSetAtlasSource_275sb")
+sources/13 = SubResource("TileSetAtlasSource_hniq5")
+sources/0 = SubResource("TileSetAtlasSource_u660q")
+sources/15 = SubResource("TileSetAtlasSource_jrcb4")
+sources/16 = SubResource("TileSetAtlasSource_b3mxb")
+sources/22 = SubResource("TileSetAtlasSource_iye0r")
+sources/23 = SubResource("TileSetAtlasSource_lf0el")
+sources/24 = SubResource("TileSetAtlasSource_ne152")
+sources/25 = SubResource("TileSetAtlasSource_brrwk")
+sources/27 = SubResource("TileSetAtlasSource_28i2f")
+sources/28 = SubResource("TileSetAtlasSource_6d1bb")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1tppc"]
+texture = ExtResource("21_hfs8b")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_loixj"]
+texture = ExtResource("22_1gwpe")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r3woe"]
+texture = ExtResource("23_vphb4")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_maens"]
+texture = ExtResource("24_k3uuf")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n5say"]
+texture = ExtResource("25_obikd")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_seiha"]
+texture = ExtResource("20_wwl6j")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5sbaq"]
+texture = ExtResource("3_u660q")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6skux"]
+texture = ExtResource("4_ne152")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rox04"]
+texture = ExtResource("26_2mh31")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_sc62p"]
+sources/4 = SubResource("TileSetAtlasSource_seiha")
+sources/5 = SubResource("TileSetAtlasSource_5sbaq")
+sources/6 = SubResource("TileSetAtlasSource_6skux")
+sources/9 = SubResource("TileSetAtlasSource_rox04")
+sources/10 = SubResource("TileSetAtlasSource_1tppc")
+sources/11 = SubResource("TileSetAtlasSource_loixj")
+sources/12 = SubResource("TileSetAtlasSource_r3woe")
+sources/13 = SubResource("TileSetAtlasSource_maens")
+sources/14 = SubResource("TileSetAtlasSource_n5say")
+
+[sub_resource type="Curve2D" id="Curve2D_6f7pb"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -8, 328, 0, 0, 0, 0, 185, 330, 0, 0, 0, 0, 197, 346, 0, 0, 0, 0, 197, 372, 0, 0, 0, 0, 200, 566, -1.3310001, 0, 1.3310001, 0, 206, 582, 0, 0, 0, 0, 226, 585, 0, 0, 0, 0, 360, 583, 0, 0, 0, 0, 378, 578, 0, 0, 0, 0, 389, 565, 0, 0, 0, 0, 392, 352, 0, 0, 0, 0, 392, 297, 0, 0, 0, 0, 398, 273, 0, 0, 0, 0, 427, 264, 0, 0, 0, 0, 481, 264, 0, 0, 0, 0, 618, 265, 0, 0, 0, 0, 638, 270, 0, 0, 0, 0, 644, 288, 0, 0, 0, 0, 646, 479, 0, 0, 0, 0, 663, 502, 0, 0, 0, 0, 687, 506, 0, 0, 0, 0, 723, 507, 0, 0, 0, 0, 821, 502, 0, 0, 0, 0, 839, 487, 0, 0, 0, 0, 840, 447, 0, 0, 0, 0, 839, 270, 0, 0, 0, 0, 852, 252, 0, 0, 0, 0, 877, 249, 0, 0, 0, 0, 945, 248, 0, 0, 0, 0, 997, 246)
+}
+point_count = 30
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tpiga"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5xaec"]
+bg_color = Color(1.92523e-07, 0.7247129, 0.22420445, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nsiip"]
+bg_color = Color(0.300154, 0.7086539, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r3woe"]
+bg_color = Color(0.624439, 0.586263, 0.6254567, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ugyyj"]
+size = Vector2(274, 116)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6hd0o"]
+size = Vector2(98, 278)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4qaxy"]
+size = Vector2(233, 106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awqgu"]
+size = Vector2(102, 363)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hwsxd"]
+size = Vector2(284, 107)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vb6v4"]
+size = Vector2(106, 246)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lxmjb"]
+size = Vector2(294, 126)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hxmst"]
+size = Vector2(107, 267)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3mo3c"]
+size = Vector2(213, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jlvob"]
+size = Vector2(26, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0imr"]
+size = Vector2(83, 81.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpiga"]
+size = Vector2(67, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oa7bu"]
+size = Vector2(69.625, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1tppc"]
+size = Vector2(57.90625, 68.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_loixj"]
+size = Vector2(68, 62)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r3woe"]
+size = Vector2(44.11914, 48.375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_maens"]
+size = Vector2(46, 57.09375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_seiha"]
+size = Vector2(47, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5sbaq"]
+size = Vector2(62.625, 68.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6skux"]
+size = Vector2(60, 50.5)
+
+[node name="Node2D" type="Node2D" unique_id=1442583874]
+script = ExtResource("1_rox04")
+
+[node name="Ground" type="TileMapLayer" parent="." unique_id=1515066103]
+tile_map_data = PackedByteArray("AAAcACMAAAAAAAAAAAAcAB8AAAAAAAAAAAAgACMAEAAAAAAAAAAQACAAEAAAAAAAAAAgABQAEAAAAAAAAAAsABsAEAAAAAAAAAAkACMAAAAAAAAAAAAkAB8AAAAAAAAAAAAgABsAAAAAAAAAAAAkABsAEAAAAAAAAAAoACMAEAAAAAAAAAAsABcAAAAAAAAAAAAkABQAAAAAAAAAAAAkABgAAAAAAAAAAAAcABQAAAAAAAAAAAAcABgAAAAAAAAAAAAgABgAEAAAAAAAAAAcABwAEAAAAAAAAAAQABwAAAAAAAAAAAAUACAAAAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAQABQAAAAAAAAAAAAUABAAAAAAAAAAAAAMABAAAAAAAAAAAAAIABAAEAAAAAAAAAAEABAAAAAAAAAAAAABABAAAAAAAAAAAAAUABQAEAAAAAAAAAAQABAAEAAAAAAAAAAsABMAEAAAAAAAAAAwAA8AEAAAAAAAAAAsACMAAAAAAAAAAAAwABsAAAAAAAAAAAAwABcAAAAAAAAAAAAwABMAAAAAAAAAAAA4ABMAAAAAAAAAAAA8ABMAAAAAAAAAAAA8ABcAAAAAAAAAAAA4ABsAAAAAAAAAAAA8ABsAAAAAAAAAAAA8AB8AAAAAAAAAAAA8ACMAAAAAAAAAAAA4ACMAAAAAAAAAAAAwACMAAAAAAAAAAAAcACcAAAAAAAAAAAAgACcAAAAAAAAAAAAkACcAAAAAAAAAAAAoACcAAAAAAAAAAAAsACcAAAAAAAAAAAAwACcAAAAAAAAAAAA0ACcAAAAAAAAAAAA4ACcAAAAAAAAAAAA8ACcAAAAAAAAAAAAYACgAAAAAAAAAAAAUACgAAAAAAAAAAAAQACgAAAAAAAAAAAAMACgAAAAAAAAAAAAIACgAAAAAAAAAAAAEACgAAAAAAAAAAAAAACgAAAAAAAAAAAAAACQAAAAAAAAAAAAIACQAAAAAAAAAAAAEACQAAAAAAAAAAAAAACEAAAAAAAAAAAAAAB0AAAAAAAAAAAAAABkAAAAAAAAAAAAAABgAAAAAAAAAAAAIABgAAAAAAAAAAAAIABwAAAAAAAAAAAAIACAAAAAAAAAAAAAEABwAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA8AAsAAAAAAAAAAAA8AAcAAAAAAAAAAAA8AAMAAAAAAAAAAAAsAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA4AAQAAAAAAAAAAAA4AAsAAAAAAAAAAAA0AAsAAAAAAAAAAAA0AAcAAAAAAAAAAAAEAAwAAAAAAAAAAAAIAAwAAAAAAAAAAAAQAAwAAAAAAAAAAAAYAAwAAAAAAAAAAAAcAAwAAAAAAAAAAAAgAAwAAAAAAAAAAAAkAAwAAAAAAAAAAAAoAAwAAAAAAAAAAAAsAAwAAAAAAAAAAAAwAAwAAAAAAAAAAAAwAAgAAAAAAAAAAAAwAAQAAAAAAAAAAAAsAAQAAAAAAAAAAAAoAAgAAAAAAAAAAAAkAAQAAAAAAAAAAAAkAAgAAAAAAAAAAAAgAAQAAAAAAAAAAAAcAAQAAAAAAAAAAAAcAAgAAAAAAAAAAAAYAAgAAAAAAAAAAAAUAAQAAAAAAAAAAAAUAAgAAAAAAAAAAAAQAAgAAAAAAAAAAAAMAAQAAAAAAAAAAAAMAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAAEAAQAAAAAAAAAAAAIAAQAAAAAAAAAAAAgAB8AEAAAAAAAAAA0ACMAEAAAAAAAAAAsABAAEAAAAAAAAAAsAAgAEAAAAAAAAAA4AAgAEAAAAAAAAAAoAAQAEAAAAAAAAAAgAAgAEAAAAAAAAAAYAAQAEAAAAAAAAAAQAAQAEAAAAAAAAAAMAAwAEAAAAAAAAAAEAAgAEAAAAAAAAAAEACAAEAAAAAAAAAAUABwAEAAAAAAAAAAEABgAEAAAAAAAAAAUAAwAEAAAAAAAAAA4AB8AEAAAAAAAAAA4ABcAEAAAAAAAAAA0AAQAEAAAAAAAAAAMACAAHAAAAAAAAAAMABwAHAAAAAAAAAAMABgAHAAAAAAAAAAAABQAFgAAAAAAAAAEABQAFgAAAAAAAAAIABQAFgAAAAAAAAAUACQAFgAAAAAAAAAQACQAFgAAAAAAAAAcABAAFgAAAAAAAAAgABAAFgAAAAAAAAAkABAAFgAAAAAAAAAsAB8AFgAAAAAAAAAwAB8AFgAAAAAAAAA4AA8AFgAAAAAAAAA8AA8AFgAAAAAAAAAYACAAHAAAAAAAAAAYABwAHAAAAAAAAAAYABgAHAAAAAAAAAAYABQAHAAAAAAAAAAoABQAHAAAAAAAAAAoABgAAQAAAAAAAAAoABwAAQAAAAAAAAA0ABwAAQAAAAAAAAA0ABgAAQAAAAAAAAA0ABQAAQAAAAAAAAAoABAAFwAAAAAAAAAYACQAGAAAAAAAAAAMABQAFwAAAAAAAAA0AB8AGAAAAAAAAAAMACQAGQAAAAAAAAAoAB8AGQAAAAAAAAAYABAAGwAAAAAAAAA0AA8AGwAAAAAAAAAoABsAHAAAAAAAAAAoABcAHAAAAAAAAAA0ABsAHAAAAAAAAAA0ABcAHAAAAAAAAAA0ABMAHAAAAAAAAAA=")
+tile_set = SubResource("TileSet_5xaec")
+
+[node name="Surrounding" type="TileMapLayer" parent="." unique_id=988626247]
+tile_map_data = PackedByteArray("AAAFABEADAAAAAAAAAANAAoADAAAAAAAAAAmAAkADAAAAAAAAAA4ACQADAAAAAAAAAAfACMADAAAAAAAAAA4AAMADAAAAAAAAAAEACIACwAAAAAAAAAuABMACwAAAAAAAAAZAAgACgAAAAAAAAAhAAMACgAAAAAAAAAOAAIACgAAAAAAAAASAB4ACgAAAAAAAAAhABcACQAAAAAAAAAvAAoACQAAAAAAAAA6ABoACQAAAAAAAAARABAACQAAAAAAAAASABgABgAAAAAAAAADAAUABgAAAAAAAAAsAAMABgAAAAAAAAAeABwABQAAAAAAAAA4AAkABQAAAAAAAAAwACUABAAAAAAAAAAvABgABAAAAAAAAAAXAAMABAAAAAAAAAAEABsABAAAAAAAAAAmACQADQAAAAAAAAA7ABMADQAAAAAAAAAgABMADgAAAAAAAAA0AAIADgAAAAAAAAAJAAIADgAAAAAAAAASACYADgAAAAAAAAA7ACEADgAAAAAAAAAhAAsADgAAAAAAAAA=")
+tile_set = SubResource("TileSet_sc62p")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=437678759]
+curve = SubResource("Curve2D_6f7pb")
+
+[node name="spawnTimer" type="Timer" parent="." unique_id=1152646881]
+wait_time = 0.5
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1912968497]
+
+[node name="MoneyDisplay" type="Control" parent="CanvasLayer" unique_id=506828997]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 255.0
+offset_bottom = 55.0
+
+[node name="DollarSign" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=495875372]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Digit0" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=749716039]
+layout_mode = 0
+offset_left = 25.0
+offset_right = 89.0
+offset_bottom = 64.0
+
+[node name="Digit1" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=1531002879]
+layout_mode = 0
+offset_left = 50.0
+offset_right = 114.0
+offset_bottom = 64.0
+
+[node name="Digit2" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=1608686560]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 139.0
+offset_bottom = 64.0
+
+[node name="Digit3" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=1331925334]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 164.0
+offset_bottom = 64.0
+
+[node name="Digit4" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=186867562]
+layout_mode = 0
+offset_left = 125.0
+offset_right = 189.0
+offset_bottom = 64.0
+
+[node name="Digit5" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=909994472]
+layout_mode = 0
+offset_left = 150.0
+offset_right = 214.0
+offset_bottom = 64.0
+
+[node name="Digit6" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=1242944379]
+layout_mode = 0
+offset_left = 175.0
+offset_right = 239.0
+offset_bottom = 64.0
+
+[node name="Digit7" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=1992926002]
+layout_mode = 0
+offset_left = 200.0
+offset_right = 264.0
+offset_bottom = 64.0
+
+[node name="Digit8" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=327366220]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 289.0
+offset_bottom = 64.0
+
+[node name="Digit9" type="TextureRect" parent="CanvasLayer/MoneyDisplay" unique_id=1456584366]
+layout_mode = 0
+offset_left = 250.0
+offset_right = 314.0
+offset_bottom = 64.0
+
+[node name="NextWaveButton" type="TextureButton" parent="CanvasLayer" unique_id=1573634935]
+custom_maximum_size = Vector2(152, 48)
+offset_left = 1000.0
+offset_top = -1.0
+offset_right = 1147.0
+offset_bottom = 47.0
+texture_normal = ExtResource("27_w55ow")
+texture_pressed = ExtResource("28_fml5w")
+texture_hover = ExtResource("28_fml5w")
+stretch_mode = 0
+
+[node name="Shop" type="Panel" parent="CanvasLayer" unique_id=852299873]
+offset_left = 1001.0
+offset_top = 46.0
+offset_right = 1156.0
+offset_bottom = 643.0
+
+[node name="ShopTitle" type="Label" parent="CanvasLayer/Shop" unique_id=238131258]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 98.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxTexture_tpiga")
+text = "SHOP"
+
+[node name="BlueTank" type="TextureRect" parent="CanvasLayer/Shop" unique_id=227524707]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 45.0
+offset_right = 51.0
+offset_bottom = 91.0
+texture = ExtResource("29_r2bgk")
+
+[node name="BlueTankPrice" type="Label" parent="CanvasLayer/Shop" unique_id=1469305570]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 100.0
+offset_right = 53.0
+offset_bottom = 123.0
+text = "$50"
+
+[node name="BuyBlueTank" type="Button" parent="CanvasLayer/Shop" unique_id=1755473508]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 40.0
+offset_right = 57.0
+offset_bottom = 121.0
+flat = true
+
+[node name="RedTank" type="TextureRect" parent="CanvasLayer/Shop" unique_id=1564870443]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 45.0
+offset_right = 120.0
+offset_bottom = 91.0
+texture = ExtResource("30_lidvp")
+
+[node name="RedTankPrice" type="Label" parent="CanvasLayer/Shop" unique_id=1770143515]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 99.0
+offset_right = 125.0
+offset_bottom = 148.0
+text = "$150
+"
+
+[node name="BuyRedTank" type="Button" parent="CanvasLayer/Shop" unique_id=2141421515]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 38.0
+offset_right = 123.0
+offset_bottom = 121.0
+flat = true
+
+[node name="BlackTank" type="TextureRect" parent="CanvasLayer/Shop" unique_id=55286014]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 147.0
+offset_right = 54.0
+offset_bottom = 193.0
+texture = ExtResource("31_c5d6v")
+
+[node name="BlackTankPrice" type="Label" parent="CanvasLayer/Shop" unique_id=1986197173]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 202.0
+offset_right = 53.0
+offset_bottom = 225.0
+text = "$400"
+
+[node name="BuyBlackTank" type="Button" parent="CanvasLayer/Shop" unique_id=455869355]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.177
+anchor_bottom = 0.177
+offset_left = 10.0
+offset_top = 37.331
+offset_right = 58.0
+offset_bottom = 117.331
+flat = true
+
+[node name="GreenTank" type="TextureRect" parent="CanvasLayer/Shop" unique_id=1434204187]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 148.0
+offset_right = 132.0
+offset_bottom = 194.0
+texture = ExtResource("32_df044")
+
+[node name="GreenTankPrice" type="Label" parent="CanvasLayer/Shop" unique_id=76456927]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 199.0
+offset_right = 133.0
+offset_bottom = 222.0
+text = "$800"
+
+[node name="BuyGreenTank" type="Button" parent="CanvasLayer/Shop" unique_id=372866131]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 141.0
+offset_right = 136.0
+offset_bottom = 223.0
+flat = true
+
+[node name="DoubleTank" type="TextureRect" parent="CanvasLayer/Shop" unique_id=1412171778]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 248.0
+offset_right = 64.0
+offset_bottom = 300.0
+texture = ExtResource("33_fhrnc")
+
+[node name="DoubleTankPrice" type="Label" parent="CanvasLayer/Shop" unique_id=108563191]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 316.0
+offset_right = 56.0
+offset_bottom = 339.0
+text = "$1800"
+
+[node name="BuyDoubleTank" type="Button" parent="CanvasLayer/Shop" unique_id=1915892717]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 237.0
+offset_right = 73.0
+offset_bottom = 342.0
+flat = true
+
+[node name="LargeTank" type="TextureRect" parent="CanvasLayer/Shop" unique_id=1305035873]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 245.0
+offset_right = 134.0
+offset_bottom = 305.0
+texture = ExtResource("34_b0lxx")
+
+[node name="LargeTankPrice" type="Label" parent="CanvasLayer/Shop" unique_id=158689067]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 314.0
+offset_right = 130.0
+offset_bottom = 337.0
+text = "$3000"
+
+[node name="BuyLargeTank" type="Button" parent="CanvasLayer/Shop" unique_id=1138588862]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 241.0
+offset_right = 140.0
+offset_bottom = 341.0
+flat = true
+
+[node name="WaveCounter" type="Label" parent="CanvasLayer" unique_id=591882267]
+offset_left = 913.0
+offset_top = 4.0
+offset_right = 971.0
+offset_bottom = 35.0
+
+[node name="TowerHealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=639922531]
+offset_left = 997.0
+offset_top = 538.0
+offset_right = 1154.0
+offset_bottom = 588.0
+theme_override_styles/background = SubResource("StyleBoxFlat_5xaec")
+theme_override_styles/fill = SubResource("StyleBoxFlat_nsiip")
+
+[node name="YouDiedLabel" type="Label" parent="CanvasLayer" unique_id=1172608950]
+visible = false
+offset_left = -48.0
+offset_top = -35.0
+offset_right = 1178.0
+offset_bottom = 690.0
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_r3woe")
+text = "                      
+
+
+                               
+                             Game Over"
+
+[node name="TankUpgradeSystem" type="Panel" parent="CanvasLayer" unique_id=182000049]
+visible = false
+offset_left = 260.0
+offset_top = 164.0
+offset_right = 717.0
+offset_bottom = 392.0
+script = ExtResource("35_hyvfv")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TankUpgradeSystem" unique_id=1255313081]
+custom_maximum_size = Vector2(600, 400)
+layout_mode = 0
+offset_left = -54.0
+offset_top = -74.0
+offset_right = 546.0
+offset_bottom = 326.0
+texture = ExtResource("36_0pnta")
+
+[node name="TankLevel" type="Label" parent="CanvasLayer/TankUpgradeSystem" unique_id=1096078244]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 50.0
+offset_right = 346.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 17
+text = ": 1"
+
+[node name="TankDamage" type="Label" parent="CanvasLayer/TankUpgradeSystem" unique_id=155193896]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 116.0
+offset_right = 547.0
+offset_bottom = 181.0
+theme_override_font_sizes/font_size = 19
+text = "25"
+
+[node name="TankAttackSpeed" type="Label" parent="CanvasLayer/TankUpgradeSystem" unique_id=1016977248]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 162.0
+offset_right = 529.0
+offset_bottom = 196.0
+theme_override_font_sizes/font_size = 19
+text = "1.0"
+
+[node name="UpgradePrice" type="Label" parent="CanvasLayer/TankUpgradeSystem" unique_id=1376318652]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 239.0
+offset_right = 304.0
+offset_bottom = 273.0
+theme_override_font_sizes/font_size = 21
+text = "$100"
+
+[node name="UpgradeButton" type="Button" parent="CanvasLayer/TankUpgradeSystem" unique_id=532303037]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 220.0
+offset_right = 476.0
+offset_bottom = 270.0
+
+[node name="Tank" type="TextureRect" parent="CanvasLayer/TankUpgradeSystem" unique_id=1701946113]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 65.0
+offset_right = 140.0
+offset_bottom = 171.0
+texture = ExtResource("29_r2bgk")
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/TankUpgradeSystem" unique_id=1796913250]
+layout_mode = 0
+offset_left = 451.0
+offset_top = -7.0
+offset_right = 489.0
+offset_bottom = 30.0
+
+[node name="TankDamageNext" type="Label" parent="CanvasLayer/TankUpgradeSystem" unique_id=1777587788]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 119.0
+offset_right = 469.0
+offset_bottom = 142.0
+
+[node name="TankAttackSpeedNext" type="Label" parent="CanvasLayer/TankUpgradeSystem" unique_id=1266699073]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 166.0
+offset_right = 474.0
+offset_bottom = 189.0
+
+[node name="Back button" type="Button" parent="CanvasLayer" unique_id=1684993093]
+offset_left = 1002.0
+offset_top = 590.0
+offset_right = 1154.0
+offset_bottom = 642.0
+text = "Back"
+
+[node name="SpeedButton" type="Button" parent="CanvasLayer" unique_id=928797280]
+offset_left = 1000.0
+offset_top = 401.0
+offset_right = 1150.0
+offset_bottom = 451.0
+text = "1x"
+
+[node name="Node" type="Node" parent="." unique_id=2057921717]
+
+[node name="PlacementArea" type="Area2D" parent="." unique_id=1315645648]
+visible = false
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlacementArea" unique_id=1267778303]
+position = Vector2(113, 322)
+shape = SubResource("RectangleShape2D_ugyyj")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PlacementArea" unique_id=519669864]
+position = Vector2(202, 491)
+shape = SubResource("RectangleShape2D_6hd0o")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="PlacementArea" unique_id=1720304318]
+position = Vector2(338.5, 577)
+shape = SubResource("RectangleShape2D_4qaxy")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="PlacementArea" unique_id=1988388072]
+position = Vector2(385, 377.5)
+shape = SubResource("RectangleShape2D_awqgu")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="PlacementArea" unique_id=1549983268]
+position = Vector2(560, 252.5)
+shape = SubResource("RectangleShape2D_hwsxd")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="PlacementArea" unique_id=2091229413]
+position = Vector2(649, 408)
+shape = SubResource("RectangleShape2D_vb6v4")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="PlacementArea" unique_id=1625197326]
+position = Vector2(747, 503)
+shape = SubResource("RectangleShape2D_lxmjb")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="PlacementArea" unique_id=1897163463]
+position = Vector2(840.5, 350.5)
+shape = SubResource("RectangleShape2D_hxmst")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="PlacementArea" unique_id=1304868539]
+position = Vector2(894.5, 245)
+shape = SubResource("RectangleShape2D_3mo3c")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="PlacementArea" unique_id=806497452]
+position = Vector2(536, 188.5)
+shape = SubResource("RectangleShape2D_jlvob")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="PlacementArea" unique_id=1739068048]
+position = Vector2(72, 549)
+shape = SubResource("RectangleShape2D_t0imr")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="PlacementArea" unique_id=1695700772]
+position = Vector2(72.5, 439)
+shape = SubResource("RectangleShape2D_tpiga")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="PlacementArea" unique_id=269661666]
+position = Vector2(493.1875, 454)
+shape = SubResource("RectangleShape2D_oa7bu")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="PlacementArea" unique_id=448678871]
+position = Vector2(613.0469, 589.75)
+shape = SubResource("RectangleShape2D_1tppc")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="PlacementArea" unique_id=261361649]
+position = Vector2(775, 600)
+shape = SubResource("RectangleShape2D_loixj")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="PlacementArea" unique_id=39494313]
+position = Vector2(952, 536.8125)
+shape = SubResource("RectangleShape2D_r3woe")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="PlacementArea" unique_id=1731976562]
+position = Vector2(952, 315)
+shape = SubResource("RectangleShape2D_maens")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="PlacementArea" unique_id=108008754]
+position = Vector2(762, 391)
+shape = SubResource("RectangleShape2D_seiha")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="PlacementArea" unique_id=1436395871]
+position = Vector2(745, 305)
+shape = SubResource("RectangleShape2D_5sbaq")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="PlacementArea" unique_id=725373310]
+position = Vector2(377.6875, 57.875)
+shape = SubResource("RectangleShape2D_5sbaq")
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="PlacementArea" unique_id=2094125966]
+position = Vector2(712, 57)
+shape = SubResource("RectangleShape2D_5sbaq")
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="PlacementArea" unique_id=848237056]
+position = Vector2(907, 147)
+shape = SubResource("RectangleShape2D_5sbaq")
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="PlacementArea" unique_id=1326066464]
+position = Vector2(62, 90)
+shape = SubResource("RectangleShape2D_5sbaq")
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="PlacementArea" unique_id=1832819214]
+position = Vector2(153, 49)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="PlacementArea" unique_id=703187015]
+position = Vector2(836, 46)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="PlacementArea" unique_id=1339035102]
+position = Vector2(414, 155)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="PlacementArea" unique_id=1816455088]
+position = Vector2(238, 58)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="PlacementArea" unique_id=102908327]
+position = Vector2(622, 146)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="PlacementArea" unique_id=117305033]
+position = Vector2(545, 72)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="PlacementArea" unique_id=1442403582]
+position = Vector2(216, 164)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="PlacementArea" unique_id=1094908075]
+position = Vector2(286, 281)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="PlacementArea" unique_id=989214444]
+position = Vector2(766, 189)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="PlacementArea" unique_id=1660171661]
+position = Vector2(899, 54)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D34" type="CollisionShape2D" parent="PlacementArea" unique_id=1627635494]
+position = Vector2(506, 566)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="PlacementArea" unique_id=1576574255]
+position = Vector2(939, 442)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="PlacementArea" unique_id=2082168755]
+position = Vector2(542, 391)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D37" type="CollisionShape2D" parent="PlacementArea" unique_id=563358083]
+position = Vector2(298, 500)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D38" type="CollisionShape2D" parent="PlacementArea" unique_id=2079626915]
+position = Vector2(299, 391)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="CollisionShape2D39" type="CollisionShape2D" parent="PlacementArea" unique_id=342682609]
+position = Vector2(905, 586)
+shape = SubResource("RectangleShape2D_6skux")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=1823653299]
+volume_db = -15.0
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="." unique_id=125717212]
+stream = ExtResource("37_rox04")
+volume_db = -5.0
+
+[connection signal="pressed" from="CanvasLayer/NextWaveButton" to="." method="_on_next_wave_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop/BuyBlueTank" to="." method="_on_buy_blue_tank_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop/BuyRedTank" to="." method="_on_buy_red_tank_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop/BuyBlackTank" to="." method="_on_buy_black_tank_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop/BuyGreenTank" to="." method="_on_buy_green_tank_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop/BuyDoubleTank" to="." method="_on_buy_double_tank_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop/BuyLargeTank" to="." method="_on_buy_large_tank_pressed"]
+[connection signal="pressed" from="CanvasLayer/Back button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/SpeedButton" to="." method="_on_speed_button_pressed"]

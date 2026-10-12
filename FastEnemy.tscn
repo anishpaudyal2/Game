@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bkce6k35clen6"]
+
+[ext_resource type="Script" uid="uid://f3ylcac6m1me" path="res://code/enemy_1.gd" id="1_jh3q3"]
+[ext_resource type="Texture2D" uid="uid://b5irotb50ym4s" path="res://Enemy/money/apple.png" id="2_5kibx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ct38"]
+bg_color = Color(0.32168847, 0.8834583, 0.323661, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5xaec"]
+radius = 15.132746
+
+[node name="Enemy1" type="PathFollow2D" unique_id=253338451]
+rotation = 0.010362324
+loop = false
+script = ExtResource("1_jh3q3")
+speed = 200.0
+health = 200
+money_reward = 15
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=208998923]
+anchors_preset = -1
+anchor_bottom = 0.5
+offset_left = -12.248047
+offset_top = -23.874365
+offset_right = 15.553322
+offset_bottom = -16.818907
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_1ct38")
+value = 100.0
+show_percentage = false
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1987902779]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=374139229]
+position = Vector2(1.9998932, -0.02072525)
+shape = SubResource("CircleShape2D_5xaec")
+
+[node name="Apple" type="Sprite2D" parent="." unique_id=412905658]
+position = Vector2(1.659144, -1.3442783)
+rotation = 3.1415927
+scale = Vector2(0.054347157, 0.04992608)
+texture = ExtResource("2_5kibx")

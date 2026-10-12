@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbc7iymn8wlo8"
+path="res://.godot/imported/fart.mp3-ec304ea6973895d14134ea5a0864fa8d.mp3str"
+
+[deps]
+
+source_file="res://Tank Sound/fart.mp3"
+dest_files=["res://.godot/imported/fart.mp3-ec304ea6973895d14134ea5a0864fa8d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

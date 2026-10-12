@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://clyhiaqyp16x0"]
+
+[ext_resource type="Script" uid="uid://do24geo1w6wwv" path="res://options_menu.gd" id="1_lbr8e"]
+
+[node name="Options Menu" type="Node2D" unique_id=1042786429]
+script = ExtResource("1_lbr8e")
+
+[node name="Panel" type="Panel" parent="." unique_id=1294076967]
+self_modulate = Color(4.690688, 12.166854, 12.837791, 1)
+offset_right = 1151.0
+offset_bottom = 643.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=83550528]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 9.0
+offset_right = 1165.0
+offset_bottom = 650.0
+text = "OBJECTIVE
+Stop the fruit enemies from reaching the end of the path.
+
+PLACING TANKS
+Select a tank from the shop.
+Move it to where you want it.
+Left-click to place it.
+Tanks cannot be placed on the road.
+Tank starts attacking as soon as you buy it, even before you place it down, if an enemy is within its range
+
+UPGRADING
+Right-click a placed tank to open the upgrade menu.
+Upgrading increases damage and attack speed.
+
+MONEY
+Defeating enemies gives you money.
+Use money to buy and upgrade tanks.
+
+WAVES
+Press Next Wave to start the next wave.
+Different enemies appear as the waves increase."
+
+[node name="BackButton" type="Button" parent="Panel" unique_id=1519122329]
+layout_mode = 0
+offset_left = 1009.0
+offset_top = 587.0
+offset_right = 1150.0
+offset_bottom = 642.0
+theme_override_colors/font_color = Color(0.0016764245, 0.0093103545, 0.0093103545, 1)
+text = "Back"
+
+[node name="VolumeButton" type="Button" parent="Panel" unique_id=1654042601]
+layout_mode = 0
+offset_left = 924.0
+offset_right = 1152.0
+offset_bottom = 58.0
+text = "Volume Contol"
+
+[connection signal="pressed" from="Panel/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Panel/VolumeButton" to="." method="_on_volume_button_pressed"]

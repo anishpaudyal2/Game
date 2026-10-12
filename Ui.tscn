@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://df6uwvfw21q7o"]
+
+[ext_resource type="Script" uid="uid://chicq6kwigxuh" path="res://code/ui.gd" id="1_24e4x"]
+[ext_resource type="Texture2D" uid="uid://13rbrhm28wy4" path="res://buttons/2.png" id="2_ukj8e"]
+[ext_resource type="Texture2D" uid="uid://bvq5vkd06uuck" path="res://buttons/4.png" id="3_w7enk"]
+[ext_resource type="Texture2D" uid="uid://b2aq5e0n41psm" path="res://buttons/3.png" id="4_aputy"]
+[ext_resource type="Texture2D" uid="uid://bmn4gqhistekt" path="res://buttons/5.png" id="5_7paak"]
+[ext_resource type="Texture2D" uid="uid://c1ln6mxwve2k4" path="res://buttons/6.png" id="6_5sqrc"]
+[ext_resource type="Texture2D" uid="uid://dn44porc8mtwq" path="res://buttons/7.png" id="7_ilk7v"]
+[ext_resource type="Texture2D" uid="uid://ddwoh2iqr8051" path="res://buttons/8.png" id="8_flkkw"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g6l6n"]
+load_path = "res://.godot/imported/1.png-d44fb824aac7bb4cdb39360ba432e1a9.ctex"
+
+[node name="MainMenu" type="Node2D" unique_id=1267826086]
+script = ExtResource("1_24e4x")
+
+[node name="Panel" type="Panel" parent="." unique_id=1937392424]
+modulate = Color(0.3019608, 1, 1, 1)
+self_modulate = Color(2.5937986, 5.2618666, 5.2618666, 1)
+offset_right = 1154.0
+offset_bottom = 652.0
+
+[node name="Button_Manager" type="Control" parent="." unique_id=2049991375]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Play" type="TextureButton" parent="Button_Manager" unique_id=155251502]
+custom_minimum_size = Vector2(10, 10)
+custom_maximum_size = Vector2(350, 150)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.1240001
+anchor_bottom = 0.647
+offset_left = 415.0
+offset_top = 36.0
+offset_right = 720.04
+offset_bottom = 160.12
+texture_normal = SubResource("CompressedTexture2D_g6l6n")
+texture_pressed = ExtResource("2_ukj8e")
+texture_hover = ExtResource("2_ukj8e")
+stretch_mode = 0
+
+[node name="Options" type="TextureButton" parent="Button_Manager" unique_id=2019910708]
+custom_maximum_size = Vector2(350, 150)
+layout_mode = 0
+offset_left = 404.0
+offset_top = 174.0
+offset_right = 754.0
+offset_bottom = 324.0
+texture_normal = ExtResource("3_w7enk")
+texture_pressed = ExtResource("4_aputy")
+texture_hover = ExtResource("4_aputy")
+stretch_mode = 0
+
+[node name="Quit" type="TextureButton" parent="Button_Manager" unique_id=823713936]
+custom_maximum_size = Vector2(320, 120)
+layout_mode = 0
+offset_left = 421.0
+offset_top = 319.0
+offset_right = 741.0
+offset_bottom = 439.0
+texture_normal = ExtResource("5_7paak")
+texture_pressed = ExtResource("6_5sqrc")
+texture_hover = ExtResource("6_5sqrc")
+stretch_mode = 0
+
+[node name="Credits" type="TextureButton" parent="Button_Manager" unique_id=1241526033]
+custom_maximum_size = Vector2(360, 150)
+layout_mode = 0
+offset_left = 413.0
+offset_top = 436.0
+offset_right = 773.0
+offset_bottom = 586.0
+texture_normal = ExtResource("7_ilk7v")
+texture_pressed = ExtResource("8_flkkw")
+texture_hover = ExtResource("8_flkkw")
+stretch_mode = 0
+
+[connection signal="pressed" from="Button_Manager/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Button_Manager/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button_Manager/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Button_Manager/Credits" to="." method="_on_credits_pressed"]
